@@ -1,11 +1,11 @@
 /*PARA MOSTRAR LA SUMA DADA POR NUMERO DEL USUARIO*/
 
 document.getElementById('numUsua').addEventListener('submit', function(event) {
-    event.preventDefault(); /* Evita que el formulario se envíe y se pueda ejecutar el conteo*/
+    event.preventDefault(); /* Evita que el formulario se envÃ­e y se pueda ejecutar el conteo*/
     
     var number = parseInt(document.getElementById('numberInput').value);
     if (isNaN(number)) {
-      alert('Por favor, ingresa un número válido.');
+      alert('Por favor, ingresa un nÃºmero vÃ¡lido.');
       return;
     }
     
@@ -24,7 +24,7 @@ document.getElementById('numUsua').addEventListener('submit', function(event) {
 /*PARA MOSTRAR CONTEO HASTA NUMERO DEL USUARIO*/
 
 document.getElementById('numUsua').addEventListener('submit', function(event) {
-    event.preventDefault(); /* Evita que el formulario se envíe y se pueda ejecutar el conteo*/
+    event.preventDefault(); /* Evita que el formulario se envÃ­e y se pueda ejecutar el conteo*/
     
     var number = parseInt(document.getElementById('numberInput').value);
     if (isNaN(number)) {
@@ -35,7 +35,7 @@ document.getElementById('numUsua').addEventListener('submit', function(event) {
     var counterDiv = document.getElementById('contador');
     counterDiv.innerHTML = ''; // Limpiar el contenido anterior
     
-    /* Función para mostrar el contador */
+    /* FunciÃ³n para mostrar el contador */
     function showCounter(count) {
       counterDiv.innerHTML = count;
       if (count < number) {
@@ -59,13 +59,13 @@ function obtenerSaludo() {
   
     while (true) {
       if (hora >= 0 && hora < 12) {
-        saludo = 'Buenos Días Fanatico';
+        saludo = 'Buenos DÃ­as.';
         break;
       } else if (hora >= 12 && hora < 19) {
-        saludo = 'Buenas Tardes Fanatico';
+        saludo = 'Buenas Tardes.';
         break;
       } else {
-        saludo = 'Buenas Noches Fanatico';
+        saludo = 'Buenas Noches.';
         break;
       }
     }
